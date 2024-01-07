@@ -115,6 +115,7 @@ main .box-container .box .p-3{
     font-weight: 400;
     text-align: left;
     width: 682px;
+    
 }
 
 
@@ -172,5 +173,8 @@ footer nav ul li a img:hover
         width: 339px;
         height: 204px;
         flex-shrink: 0;
+    }
+    main .box-container .box .p-3{
+        flex-wrap: wrap;
     }
 }

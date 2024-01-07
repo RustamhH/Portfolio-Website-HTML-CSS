@@ -113,7 +113,6 @@ main .section-1 .span-section #year{
 }
 
 main .section-1 .span-section #greyitem{
-    color: var(--Light, #8695A4);
     font-size: 20px;
 }
 
