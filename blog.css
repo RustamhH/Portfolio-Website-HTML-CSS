@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo';
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-style: inherit;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: #21243D;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+    padding: 27px 60px;
+}
+
+header #colored{
+    color:#FF6464
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 30px;
+}
+header nav ul .mobile-navbar{
+    visibility: collapse;
+}
+
+header nav ul li a {
+    transition-duration: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF6464;
+}
+
+main .title{
+    width: 681px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+main .blog{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
+main .box-container{
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+main .box-container .box{
+    width: 681px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+main .box-container .box .p-1{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+}
+
+main .box-container .box .p-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+main .box-container .box .p-2 span{
+    font-size: 20px;
+    font-weight: 400;
+}
+main .box-container .box .p-2 #greyitem{
+    color:  #8695A4;
+}
+main .box-container .box .p-3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    width: 682px;
+}
+
+
+footer {
+    height: 182px;
+    margin-top: 53px;
+}
+footer .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 45px;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:768px) {
+    header nav ul{
+        visibility: collapse;
+        align-items: center;
+    }
+    header nav ul img{
+        visibility: visible;
+    }
+}
