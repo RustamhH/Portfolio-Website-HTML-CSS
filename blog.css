@@ -118,33 +118,59 @@ main .box-container .box .p-3{
 }
 
 
-footer {
-    height: 182px;
-    margin-top: 53px;
-}
-footer .list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    margin-bottom: 45px;
+footer
+{
+    padding: 50px 0;
+    margin: auto;
 }
 
-footer p{
+footer nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+
+footer nav .copyright
+{
     font-size: 14px;
     font-weight: 400;
-    text-align: center;
-
+    padding-top: 25px;
 }
 
+
+footer nav ul li a img
+{
+    transition-duration: 0.3s;
+    transform: scale(1);
+}
+
+footer nav ul li a img:hover
+{
+    transform: scale(1.5);
+    filter: contrast(5);
+}
 
 @media screen and (max-width:768px) {
     header nav ul{
         visibility: collapse;
         align-items: center;
+        
     }
     header nav ul img{
         visibility: visible;
+    }
+
+    main .box-container .box{
+        width: 339px;
+        height: 204px;
+        flex-shrink: 0;
     }
 }
